@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #d46a3b;
+    
+  }
+  
+  /* Center Text Styles */
+  .center-text {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Left and Right Icon Styles */
+  .left-icons,
+  .right-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+  }
+  
+  
+  
+  /* Media Query for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .left-icons,
+    .right-icons {
+      align-items: bottom; 
+    }
+
+  }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row; /* Stack elements vertically */
+      text-align: center; /* Center-align all elements */
+    }
+  }

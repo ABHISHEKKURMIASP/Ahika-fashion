@@ -1,0 +1,615 @@
+ 
+ /* Footer Section */
+ .footer-section {
+  background-color: rgb(141, 123, 126);
+    color: #040303;
+    padding: 30px 0; 
+    padding-bottom: 80px;
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+   
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    flex: 1 0 calc(25% - 10px);
+    margin-bottom: 20px;
+   
+    
+   
+  }
+  
+  /* Footer Responsive copyright respoinsiveness */
+  
+  
+  @media (min-width: 576px) {
+    .footer-content {
+      flex: 1 0 calc(20% - 10px);
+      margin-bottom: 0px;
+    }
+  }
+   
+  /* Medium devices (768px and up) */
+   @media (min-width: 768px) {
+    .footer-section {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    } 
+  
+     .footer-content {
+      flex: 1 0 calc(20% - 10px); /* Adjust the width as needed */
+       margin: 0px;
+      
+    }
+    .made-in {
+      order: 2;
+      flex-basis: 100%;
+    } 
+  }   
+  @media (min-width: 992px) {
+    .footer-content {
+      flex: 1 0 calc(20% - 10px); /* Adjust the width as needed */
+      margin: 0 5px; /* Adjust margin for equal spacing */
+    }
+  }
+
+  
+  
+
+
+
+
+  
+  
+ /*contact component*/
+  
+ 
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    text-align: center;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .contact-details ul {
+    
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+    
+   
+  }
+  .contact-details li {
+    margin-bottom: 5px; /* Adjust spacing between list items */
+   
+  }
+  .contact-details a {
+    
+    text-align: center;
+    text-decoration: none; /* Remove default hyperlink styling */
+    color: #000; /* Set default text color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  .contact-details a:hover {
+    color: rgb(223, 234, 218); /* Change text color on hover */
+  }
+  
+  /* Adjust the font size and style as needed */
+  .contact-info p {
+    max-width: 100%;
+    margin-top: 14px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 28px; 
+  }
+  
+  /* Additional styling for icons */
+  .contact-details svg {
+    margin-right: 20px; /* Adjust spacing between icon and text */
+    font-size: 18px; /* Set icon size */
+  }
+  @media (max-width: 769px) and (max-width: 576px){
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-left: 14px;
+      text-align: center;
+    }
+   
+   
+    .contact-info p {
+      /* Adjust as needed */
+      /* Reset max-width for larger screens */
+      
+    max-width: 100%;
+    font-weight: 400;  
+    }
+  }
+  
+
+    
+
+
+
+/*customer support component */
+
+.customer-support ul {
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap; /* Prevent text wrapping */
+  
+ 
+}
+.customer-support li {
+  margin-bottom: 5px; /* Adjust spacing between list items */
+  font-weight: 400;
+  
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 14px;
+ 
+}
+.customer-support a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove default hyperlink styling */
+  color: #000; /* Set default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.customer-support a:hover {
+  color: rgb(223, 234, 218); /* Change text color on hover */
+}
+
+.customer-support ul li {
+  margin-bottom: 5px;
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+  
+.customer-support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-support h3{
+  margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 25px;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-weight: 600;
+   text-align: center;
+   margin-right: 12px;
+   white-space: nowrap;
+}
+.customer-support svg {
+  margin-right: 5px;
+  font-size: 16px;
+  padding-right: 8px;
+  
+}
+
+@media (max-width: 576px) {
+  .customer-support {
+    align-items: flex-start;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  .customer-support h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .customer-support ul {
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+}
+
+
+
+
+/*MY ACOOUNT component/*/
+
+.my-account ul {
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap; 
+ 
+}
+.my-account li {
+  margin-bottom: 5px; /* Adjust spacing between list items */
+  font-weight: 400;
+  
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 14px;
+ 
+}
+.my-account a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove default hyperlink styling */
+  color: #000; /* Set default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.my-account a:hover {
+  color: rgb(223, 234, 218); /* Change text color on hover */
+}
+
+.my-account ul li {
+  margin-bottom: 5px;
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+  
+.my-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-account h3{
+  margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 25px;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-weight: 600;
+   text-align: center;
+   margin-right: 12px;
+   white-space: nowrap;
+}
+.my-account svg {
+  margin-right: 5px;
+  font-size: 16px;
+  padding-right: 8px;
+  
+}
+
+@media (max-width: 576px) {
+  .my-account {
+    align-items: flex-start;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  .my-account h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .my-account ul {
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+}
+
+
+/* Useful link*/
+.user-links ul {
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap; 
+ 
+}
+.user-links li {
+  margin-bottom: 5px; /* Adjust spacing between list items */
+  font-weight: 400;
+  
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 14px;
+ 
+}
+.user-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove default hyperlink styling */
+  color: #000; /* Set default text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.user-links a:hover {
+  color: rgb(223, 234, 218); /* Change text color on hover */
+}
+
+.user-links ul li {
+  margin-bottom: 5px;
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+  
+.user-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-links h3{
+  margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 25px;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-weight: 600;
+   text-align: center;
+   margin-right: 12px;
+   white-space: nowrap;
+}
+.user-links svg {
+  margin-right: 5px;
+  font-size: 16px;
+  padding-right: 8px;
+  
+}
+
+@media (max-width: 576px) {
+  .user-links {
+    align-items: flex-start;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  .user-links h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .user-links ul {
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*For copyright*/
+  .footer {
+    text-align: center;
+  background-color: antiquewhite;
+   
+   
+  }
+  
+  .copyright {
+    color:black;
+   
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px
+  
+  }
+  
+  .made-in {
+    color: bisque;
+    line-height: normal;
+    margin-left: 5px;
+    border: 0px solid black;
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: black;
+   
+    border-radius: 3px;
+  }
+
+
+  
+
+
+
+  /* Styles for the Newsletter component */
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    box-sizing: border-box;
+   
+   }
+  .newsletter h3{
+   
+    margin-top: 1px;
+      font-size: 25px;
+      color: #000;
+      text-transform: capitalize;
+      letter-spacing: .5px;
+      font-weight: 600;
+      padding: 10px 0;
+     text-align: center;    
+  }
+  .newsletter p {
+    text-align: center;
+    
+   }
+.newsletter img {
+  max-width: 100px; /* Adjust the maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.small-images img {
+  max-width: 160px; /* Adjust the maximum width for small images */
+  height: auto; /* Maintain aspect ratio */
+}
+.newsletter a{
+  text-decoration: none; /* Remove default hyperlink styling */
+  color: #000; /* Set default text color */
+  transition: color 0.3s ease; 
+  font-size: 20px;
+}
+.newsletter a:hover{
+  color:rgb(223, 234, 218);
+}
+.input-line {
+  position: relative;
+  width: 60%;
+  
+ 
+  margin-bottom: 25px;
+  display:flex;
+  align-items: center;
+  padding-right: 10px; 
+  
+}
+
+.input-line input {
+ flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000; 
+}
+.arrow-icon {
+  
+  padding-right: 20px;
+  /*right: 5px; /* Adjust the value for the desired position */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #000; /* Adjust the color */
+}
+
+ 
+.input-line input:focus + .placeholder {
+  display: none;
+}
+
+.input-line input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.input-line input:focus::placeholder {
+  color: transparent;
+}
+
+@media (max-width: 576px) {
+  .newsletter {
+    align-items: flex-start;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  .input-line {
+    width: 60%; /* Adjust width for medium screens */
+    padding-right: 10px;
+  }
+  .newsletter h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+    padding: 0; 
+    
+  }}
+   @media (min-width: 768px) and (max-width: 992px) {
+    .input-line {
+      width: 60%; /* Adjust width for medium screens */
+     
+    }
+  }
+  @media (min-width: 603px) and (max-width: 660px) {
+    .input-line {
+      width: 50%; /* Adjust width for smaller medium screens */
+      padding-right: 5px; /*Adjust padding */
+    }
+  } 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+ /* whatsapp icon  */
+
+ .footer-whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  z-index: 1000;
+ }
+
+
+
+
+
+
+ /*bell-buttin*/
+
+
+ .bell-icon {
+  width: 50px; /* Adjust width and height as needed */
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
+  padding: 0;
+  
+  background-image: url('../images/Bell-Icon.png');
+  background-size: cover;
+ }
+ 
+ 
+ 
+ .sticky-bell {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+ }
