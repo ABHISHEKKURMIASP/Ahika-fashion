@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .img-mobile-height {
+      height: 400px; /* Adjust the height as needed */
+      
+      object-fit: cover;
+    }
+  }
