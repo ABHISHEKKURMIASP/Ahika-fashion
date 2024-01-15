@@ -13,47 +13,37 @@ import Bestseller from './component/pages/best-seller';
 import Lounge from './component/pages/lounge-wear';
 import Footer from './component/footer/footer';
 
-
+import { UserAuthContextProvider } from './context/UserAuthContext';
 import Error from './component/pages/error';
 import SignIn from './sign-in/sign-in';
+import Popup from './component/popup/popup';
 
 const App=()=> {
   return (
     <>
-      
+       <UserAuthContextProvider>
+      <Popup/>
     <Routes>
-    
-        {/* Your header component goes here */}
-        {/* ... */}
-
-        
-      
         <Route path="/" element= {<Navba />}>
+
         <Route index element= {<Home />}/>
         <Route path="/new-launch" element={<Newlaunch />} />
-  <Route path="/ethenic-wear" element={<Ethenic />} />
-  <Route path="/western-wear" element={<Western />} />
-  {/* Add more specific paths for each section */}
-  <Route path="/akhika-plus" element={<AkhikaPlus />} />
-  <Route path="/best-seller" element={<Bestseller />} />
-  <Route path="/lounge-wear" element={<Lounge />} />
-  <Route path="sign-in" element={<SignIn/>}/>
-  <Route path="/*" element={<Error />} />
-          </Route>
-          {/* Other Routes */}
-         
-       
-      
-        
-          {/* <Route path='/' element ={<Home/>} /> */}
-          {/* <Route path="/men" component={Men} />
-          <Route path="/women" component={Women} />
-          <Route path="/accessories" component={Accessories} />
-          <Route path="/sale" component={Sale} /> */}
-        
-      
+        <Route path="/ethenic-wear" element={<Ethenic />} />
+        <Route path="/western-wear" element={<Western />} />
+  
+        <Route path="/akhika-plus" element={<AkhikaPlus />} />
+        <Route path="/best-seller" element={<Bestseller />} />
+        <Route path="/lounge-wear" element={<Lounge />} />
+        {/* <Route path="/category2/:category.id" element={<CategoryDetail />} />  */}
+        <Route path="sign-in" element={<SignIn/>}/>
+        <Route path="/*" element={<Error />} />
+
+         </Route>
     </Routes>
     <Footer/>
+    </UserAuthContextProvider>
+    
+    
     </>
     
   );

@@ -1,0 +1,35 @@
+/* Define a gray medium box */
+.login-block {
+    display: block;
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   }
+   
+   /* Define a smaller font size for the heading and paragraph */
+   .login-block h4,
+   .login-block p {
+    font-size: 18px;
+    line-height: 1.5;
+   }
+   
+   /* Make the heading and paragraph center and prevent wrapping */
+   .login-block h4,
+   .login-block p {
+    display: inline-block;
+    text-align: center;
+    
+   }
+   
+   /* Add some space between the heading and paragraph */
+   .login-block h4 + p {
+    margin-top: 17px;
+   }
+
+
+   
+
+   

@@ -1,0 +1,30 @@
+/* Add these styles to your CSS file or use a CSS-in-JS solution */
+.best-seller-container {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .best-seller-heading {
+    font-size: 37px;
+    display: inline-block;
+    margin-bottom: 30px; 
+    margin-top: 30px;
+  }
+  
+  .view-all-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 55px; /* Adjust the margin as needed */
+    margin-right: 20px; /* Adjust the margin as needed */
+    font-size: 16px;
+    color: #000; /* Black color */
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .view-all-link:hover {
+    text-decoration: underline;
+  }
+  

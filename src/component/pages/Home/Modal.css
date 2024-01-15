@@ -1,0 +1,150 @@
+
+.Appa {
+  height: 100%;
+}
+
+.image-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-screen-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .full-screen-image {
+      max-height: 100%;
+  }
+}
+
+
+/* For video*/
+.VideoContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 (height/width) */
+    overflow: hidden;
+    max-width: 100%;
+    height: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 50px;
+    margin-right: 50px;
+ 
+  }
+  
+  .Video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+
+
+
+
+
+  
+
+
+  /* Style for "View All" link */
+
+/* Add these styles to your CSS file or use a CSS-in-JS solution */
+.ahika-army-container {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.ahika-army-heading {
+  font-size: 37px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.view-link {
+  position: absolute;
+  top: 50%; /* Adjust the vertical position */
+  right: 0;
+  transform: translateY(-50%); /* Center vertically */
+  font-size: 16px;
+  color: #000; /* Black color */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* For Card */
+  .card {
+    max-width: 450px; /* Set a maximum width for the card */
+    margin: 0 auto; /* Center the card */
+  }
+  .card-img {
+     /* Set a fixed height for the image */
+    width: 100%; /* Allow the image to adjust its width */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  /* Position the overlay and style text */
+  /* Transparent overlay for text */
+.card-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* Adjust image size within the card */
+.card-img-container {
+  position: relative;
+}
+/* Style text within the transparent overlay */
+.card-text {
+  color: white;
+  padding: 0px;
+  text-align: center;
+}
+/* Reduce font size of small-text */
+.small-text {
+  font-size: 13px; /* Adjust the font size as needed */
+}
+/* Align text after hr to the right corner */
+.card-text hr {
+  margin: 0;
+}
+
+
+  /* Ensure responsive behavior for columns */
+@media (max-width: 768px) {
+    .card-img {
+      height: 150px; /* Adjust image height for smaller screens */
+    }
+  } 
+
+  /* Create space between columns */
+  @media (min-width: 576px) {
+    .g-4 > [class^='col-'] {
+      padding-right: 15px; /* Add right padding to columns */
+      padding-left: 15px; /* Add left padding to columns */
+    }
+  }
+  

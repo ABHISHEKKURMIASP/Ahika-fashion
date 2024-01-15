@@ -7,7 +7,7 @@ import './carousel.css';
 const Banner = () => {
   return (
     <div className="slider-container" >
-    <Carousel interval={7000} pause={false} >
+    <Carousel interval={7000} pause={false} controls={false} indicators={false} >
       <Carousel.Item>
         <img
           className="d-block w-100 img-mobile-height"

@@ -1,19 +1,18 @@
 import { initializeApp } from "firebase/app";
-import {getAuth,signInWithRedirect,GoogleAuthProvider,signInWithPopup} from 'firebase/auth';
+import {getAuth } from 'firebase/auth';
 const firebaseConfig = {
-    apiKey: "AIzaSyAzyQod0Ti8P9eO_S8aYPNX3-RRBIgoexA",
-    authDomain: "ahika-fashion-db.firebaseapp.com",
-    projectId: "ahika-fashion-db",
-    storageBucket: "ahika-fashion-db.appspot.com",
-    messagingSenderId: "539744583959",
-    appId: "1:539744583959:web:9e72997e3a5eb9d189b752"
+    apiKey: "AIzaSyCUQK1cZIcxSKy_2dmma2UsbqYjoNxHLtk",
+    authDomain: "ahika-website-db.firebaseapp.com",
+    projectId: "ahika-website-db",
+    storageBucket: "ahika-website-db.appspot.com",
+    messagingSenderId: "1028459046375",
+    appId: "1:1028459046375:web:15e396faf6a61f4aa78942"
   };
   
   // Initialize Firebase
-  const firebaseApp = initializeApp(firebaseConfig);
-  const provider=new GoogleAuthProvider();
-  provider.setCustomParameters({
-      prompt:"select_account"
-  });
-  export const auth=getAuth();
-  export const signInWithGooglePopup=()=>signInWithPopup(auth,provider);
+  const app = initializeApp(firebaseConfig);
+
+  export const auth = getAuth(app);
+  export default app;
+  
+  

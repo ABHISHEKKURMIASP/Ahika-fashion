@@ -2,10 +2,17 @@
 .dropdown-toggle::after {
   display: none !important;
 }
-
+ .dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+ } 
+ 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block !important;
+  visibility: visible;
+ opacity: 1;
 }
 
 .custom-dropdown .dropdown-menu {
@@ -13,12 +20,12 @@
 }
 
 /* Styling the underline for the menu items */
-.nav-link {
+.line-bar {
   position: relative;
 }
 
 @media (min-width: 992px) {
-  .nav-link::after {
+  .line-bar::after {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -31,11 +38,10 @@
   }
 
   /* Show underline on hover */
-  .nav-link:hover::after {
+  .line-bar:hover::after {
     bottom: -5px;
     opacity: 1;
   }
-
   .ethenic-wear::after {
     content: '';
     position: absolute;
@@ -47,20 +53,51 @@
     transition: bottom 0.3s ease;
     opacity: 0;
   }
-
-  /* Show underline on hover */
+  
+  
   .ethenic-wear:hover::after {
     bottom: -5px;
     opacity: 1;
-  }
+  } 
+  
 }
+
+
 /* Custom styles for mega menu */
+
+.categories-column {
+  padding: 1rem 2rem !important;
+ }
 .category-items {
   list-style: none;
   padding: 0;
+  
  }
  
  .category-items li a {
+  display: block;
+ padding: 0.5rem 0;
   text-decoration: none;
   color: inherit;
  }
+ .category-items li a:hover {
+  color: #007bff;
+ }
+ 
+ .mega-menu {
+  position: absolute;
+  margin-top: 0.5rem;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+ }
+ 
+.mega-menu .categories-column {
+  margin-bottom: 20px;
+  /* Add a vertical divider */
+  padding-right: 20px; /* Adjust spacing as needed */
+}
+.mega-menu .categories-column:first-of-type {
+  border-right: 1px solid #ccc; /* Add a vertical divider to the first column */
+}

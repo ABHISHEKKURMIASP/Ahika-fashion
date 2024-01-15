@@ -109,7 +109,7 @@ const Navba = () => {
             style={{ paddingLeft: "20px" }}
           >
              <hr className="d-lg-none" />
-            <Nav.Link as={Link} to="/new-launch">
+            <Nav.Link as={Link} to="/new-launch" className="line-bar">
               NEW LAUNCH
             </Nav.Link>
             <hr className="d-lg-none" />
@@ -121,46 +121,19 @@ const Navba = () => {
              <EthenicDropdown/> 
              <hr className="d-lg-none" />
 
-             {/* <Nav.Item>
-              <Dropdown as={Nav.Item}>
-                <Dropdown.Toggle as={Nav.Link} id="navbarDropdown">
-                  WESTERN WEAR
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">Action</Dropdown.Item>
-                  <Dropdown.Item href="#">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Dropdown as={Nav.Item}>
-                <Dropdown.Toggle as={Nav.Link} id="navbarDropdown">
-                  LOUNGEWEAR
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#">Action</Dropdown.Item>
-                  <Dropdown.Item href="#">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Nav.Item>  */}
-            {/* <Nav.Link as={Link} to="/western-wear">WESTERN  WEAR</Nav.Link><hr/>
-          <Nav.Link as={Link} to="/lounge-wear">LOUNGEWEAR</Nav.Link><hr/> */}
 
 
 
-
-            <Nav.Link as={Link} to="/ahika-plus">
+            <Nav.Link as={Link} to="/ahika-plus" className="line-bar">
               AKHIKA PLUS
             </Nav.Link>
             <hr className="d-lg-none"/>
-            <Nav.Link as={Link} to="/best-seller">
+            <Nav.Link as={Link} to="/best-seller" className="line-bar">
               BEST SELLER
             </Nav.Link>
             <hr className="d-lg-none"/>
           </Nav>
+          
 
           {/*for large screen search bar*/}
           <div className="ml-3 d-none d-lg-flex align-items-center">
@@ -270,6 +243,7 @@ const Navba = () => {
          
       </Navbar>
     
+    
       {/* for search bar on smaller screen */}
       {showSearchBar && (
         <div
@@ -300,7 +274,7 @@ const Navba = () => {
               <FaTimes style={{ fontSize: "24px" }} />
             </div>
           </div>
-         
+        
         </div>
         
       )}
