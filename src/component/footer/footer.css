@@ -1,4 +1,10 @@
- 
+.footer-section {
+  background-image: url('../images/footer.jpg'); /* Update the path accordingly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Set text color to contrast with the background */
+}
  /* Footer Section */
  .footer-section {
   background-color: rgb(141, 123, 126);

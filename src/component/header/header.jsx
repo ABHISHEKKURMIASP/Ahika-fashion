@@ -4,9 +4,11 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa";
 import './header.css';
 
+
 const Header = () => {
   return (
     <header className="header">
+      
       <div className="left-icons">
       <NavLink to="https://play.google.com/store/apps/details?id=app.ahikanewfeature.android"> <IoLogoGooglePlaystore style={{color: 'white', fontSize: '25px'}}/></NavLink>
       </div>
