@@ -4,6 +4,20 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+const bodyParser = require('body-parser');
+const crypto = require('crypto');
+const twilio = require('twilio');
+
+
+// Twilio configuration
+//const accountSid = 'your_account_sid';
+//const authToken = 'your_auth_token';
+//const twilioClient = new twilio(accountSid, authToken);
+const twilioPhoneNumber = 'your_twilio_phone_number';
+
+const otpStorage = {};
+router.use(bodyParser.json());
+
 router.get('/', async (req, res) => {
     try {
         const userList = await User.find().select('-passwordHash');
@@ -163,5 +177,7 @@ router.get('/get/count', async (req, res) => {
         res.status(500).json({ success: false, message: 'Internal Server Error' });
     }
 });
+
+
 
 module.exports = router;

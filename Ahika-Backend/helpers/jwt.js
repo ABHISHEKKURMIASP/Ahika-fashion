@@ -21,6 +21,8 @@ const authJwt = () => {
       { url: /\/api\/v1\/orders(.*)/, methods: ['GET', 'OPTIONS', 'POST'] },
       `${API_URL}/users/login`,
       `${API_URL}/users/register`,
+      `${API_URL}/users/send-otp`,
+      `${API_URL}/users/verify-otp`
     ],
   });
 }
