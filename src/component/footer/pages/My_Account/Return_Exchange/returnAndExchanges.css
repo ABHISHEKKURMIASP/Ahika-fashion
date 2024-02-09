@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #returnExchanges {
+    padding: 60px 0px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  
+  #returnExchangesheadings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  #returnform {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  #detailEnter {
+    width: 400px;
+    color: rgba(0, 0, 0, 0.575);
+  }
+  
+  #orderNumber {
+    padding: 15px;
+    width: 400px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  #emailPhone {
+    padding: 15px;
+    width: 400px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  
+  #returnExchangesubmit {
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 45px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  @media (max-width: 425px) {
+    #detailEnter {
+      width: 200px;
+      font-size: small;
+    }
+  
+    #orderNumber {
+      width: 80vw;
+      height: 40px;
+    }
+    
+    #emailPhone {
+      width: 80vw;
+      height: 40px;
+    }
+  
+    #returnExchangesubmit
+    {
+      width: 80vw;
+      height: 40px;
+    }
+  }
+  

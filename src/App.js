@@ -17,6 +17,7 @@ import { UserAuthContextProvider } from './context/UserAuthContext';
 import Error from './component/pages/error';
 import SignIn from './sign-in/sign-in';
 import Popup from './component/popup/popup';
+import AppRoutes from './component/appRoutes/AppRoutes';
 
 const App=()=> {
   return (
@@ -40,6 +41,7 @@ const App=()=> {
 
          </Route>
     </Routes>
+    <AppRoutes/>
     <Footer/>
     </UserAuthContextProvider>
     

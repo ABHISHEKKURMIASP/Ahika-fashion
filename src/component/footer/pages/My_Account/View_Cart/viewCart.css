@@ -1,0 +1,102 @@
+#viewCartouterDiv
+{
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartHeading
+{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#continueLink
+{
+    height: auto;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 5%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#line 
+{
+    height: 1.6px;
+    width:25px;
+    background-color: black;
+}
+
+#continueLink a
+{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#cartContent
+{
+    height: auto;
+    width: 90%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartContent p
+{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#continueShopBtn2
+{
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+#cartlogin
+{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#haveAnAcc
+{
+    margin: 0;
+    font-size: 25px;
+}
+
+#loginBtn
+{
+    color: black;
+}
+
+@media (max-width:800px)
+{
+    #cartHeading
+    {
+        flex-direction: column;
+    }
+}

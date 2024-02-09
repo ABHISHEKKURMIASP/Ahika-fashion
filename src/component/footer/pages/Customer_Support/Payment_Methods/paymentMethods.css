@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#paymentMethods
+{
+    height: auto;
+    display: flex;
+    padding: 40px 60px 60px 60px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#paymentmContent
+{
+    height: auto;
+    width: 100%;
+}
+
+@media(max-width:600px)
+{
+    #paymentMethods
+    {
+        padding: 40px 30px 60px 30px;
+    }
+
+    #paymentMethodsHeading
+    {
+        padding-bottom: 40px;
+    }
+}

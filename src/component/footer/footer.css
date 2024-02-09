@@ -178,7 +178,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .customer-support a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color: orangered; /* Change text color on hover */
 }
 
 .customer-support ul li {
@@ -262,7 +262,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .my-account a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color: orangered; /* Change text color on hover */
 }
 
 .my-account ul li {
@@ -343,7 +343,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .user-links a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color: orangered; /* Change text color on hover */
 }
 
 .user-links ul li {
@@ -506,8 +506,10 @@
 }
 .arrow-icon {
   
-  padding-right: 20px;
+  /* padding-right: 20px; */
   /*right: 5px; /* Adjust the value for the desired position */
+  border: none;
+  background-color: transparent;
   top: 50%;
   transform: translateY(-50%);
   text-decoration: none;

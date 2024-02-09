@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#contactUs
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading00
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading00 h1
+{
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#gotQuestions
+{
+    margin:0;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#useOfForm
+{
+    color: rgba(0, 0, 0, 0.507);
+    text-align: center;
+}
+
+#form 
+{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#form input
+{
+    width: 100%;
+    margin: 1px;
+    padding: 15px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+#comment
+{
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+#btnDiv
+{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form button 
+{
+    height: 50px;
+    width: 175px;
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 962px) {
+
+    #heading00 h1
+    {
+        font-size: 28px;
+    }
+
+    #gotQuestions
+    {
+        font-size: 40px;
+    }
+
+    #form
+    {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 962px)
+{
+    #heading00 h1
+    {
+        font-size: 23px;
+    }
+
+    #gotQuestions
+    {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 465px) {
+
+    #heading00
+    {
+        padding: 20px 20px 0;
+    }
+
+    #heading00 h1
+    {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+}
+  
