@@ -10,6 +10,13 @@ import Cart1 from '../images/cart1.webp';
 import Cart2 from '../images/cart2.webp';
 import Cart3 from '../images/cart3.webp';
 import Cart4 from '../images/cart4.webp';
+import Single1 from '../images/single1.webp';
+import Single2 from '../images/single2.webp';
+import Single3 from '../images/single3.webp';
+import Single4 from '../images/single4.webp';
+import Single5 from '../images/single5.webp';
+
+
 
 
 
@@ -132,34 +139,110 @@ export const category2 = [
 export const Cart=[
   {
     id: 1,
-    
+    description: "Yellow Viscose Rayon Abstract Printed Straight Kurta VCK9632",
     price: 799.0,
     image: Cart1,
-    description: "Yellow Viscose Rayon Abstract Printed Straight Kurta VCK9632",
+    cutPrice: 2999.0, // Add cut price
+    size: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL'],
+    colors: ['white', '#FFD6B6', '#FFBDB2'],
+    title:"SKU: VCK9632_XS",
+    material:"vjhgj",
+    addDesc: "Let the print be your canvas. Think of it as a conversation starter, a chance to showcase your unique personality. Don't be afraid to play with accessories that pick up on the colors or shapes you find within the pattern. Maybe a chunky necklace that mirrors the boldness of the print.",
+    stylenote:"Layer it under a chunky cardigan or denim jacket for a touch of edge, or add a pop of color with a contrasting scarf. Dress it up with statement earrings and heels for a night out, or keep it casual with flats and a tote bag for a chic daytime look.",
+    sizefit:"The model (height 5'8) is wearing a size S",
+    materials:"Top Fabric: Viscose Rayon\nWash Care: Hand Wash",
+    specifications:"Sleeve Length :- Three-Quarter Sleeves\n Sleeve Styling :- Regular Sleeves\nShape :- Straight\nSlit Details :- Side Slits\nDesign Styling :- Regular\nHemline :- Straight\nLength :- Calf Length\nNeck :- Round Neck\nPrint or Pattern Type :- Abstract \nOccasion :- Fusion\nWeave Pattern :- Regular \n Weave Type :- Machine Weave",
+
+    images: [
+     
+      { image: Single1, title: "Front View" },
+      { image: Single2, title: "Back View" },
+      { image: Single3, title: "Front View" },
+      { image: Single4, title: "Back View" },
+      { image: Single5, title: "Front View" },
+    
+      
+    ],
  
   },
   {
     id: 2,
    
-    price: 799.0,
+    price: 599.0,
     image: Cart2,
+    cutPrice: 3999.0, // Add cut price
     description: "Yellow Viscose Rayon Floral Printed Straight Suit Set VKSKD2162",
+
+    size: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL'],
+    colors: ['#F6EEDB', '#FFD6B6', '#FFBDB2'],
+    title:"SKU: VCK9632_XS",
+    material:"vjhgj",
+    addDesc: "Let the print be your canvas. Think of it as a conversation starter, a chance to showcase your unique personality. Don't be afraid to play with accessories that pick up on the colors or shapes you find within the pattern. Maybe a chunky necklace that mirrors the boldness of the print.",
+    stylenote:"Layer it under a chunky cardigan or denim jacket for a touch of edge, or add a pop of color with a contrasting scarf. Dress it up with statement earrings and heels for a night out, or keep it casual with flats and a tote bag for a chic daytime look.",
+    sizefit:"The model (height 5'8) is wearing a size S",
+    materials:"Top Fabric: Viscose Rayon\nWash Care: Hand Wash",
+    specifications:"Sleeve Length :- Three-Quarter Sleeves\n Sleeve Styling :- Regular Sleeves\nShape :- Straight\nSlit Details :- Side Slits\nDesign Styling :- Regular\nHemline :- Straight\nLength :- Calf Length\nNeck :- Round Neck\nPrint or Pattern Type :- Abstract \nOccasion :- Fusion\nWeave Pattern :- Regular \n Weave Type :- Machine Weave",
+
+    images: [
+      { image: Single1, title: "Front View" },
+      { image: Single2, title: "Back View" },
+      { image: Single3, title: "Front View" },
+      { image: Single4, title: "Back View" },
+      { image: Single5, title: "Front View" },
+    
+    ],
    
   },
   {
     id: 3,
     
-    price: 1999,
+    price: 799,
     image: Cart3,
+    cutPrice: 1998.0, // Add cut price
     description: "Beige Pure Cotton Floral Yoke Design Flared Suit Set VKSKD2078",
+    size: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL'],
+    colors: ['#F6EEDB', '#FFD6B6', '#FFBDB2'],
+    title:"SKU: VCK9632_XS",
+    material:"vjhgj",
+    addDesc: "Let the print be your canvas. Think of it as a conversation starter, a chance to showcase your unique personality. Don't be afraid to play with accessories that pick up on the colors or shapes you find within the pattern. Maybe a chunky necklace that mirrors the boldness of the print.",
+    stylenote:"Layer it under a chunky cardigan or denim jacket for a touch of edge, or add a pop of color with a contrasting scarf. Dress it up with statement earrings and heels for a night out, or keep it casual with flats and a tote bag for a chic daytime look.",
+    sizefit:"The model (height 5'8) is wearing a size S",
+    materials:"Top Fabric: Viscose Rayon\nWash Care: Hand Wash",
+    specifications:"Sleeve Length :- Three-Quarter Sleeves\n Sleeve Styling :- Regular Sleeves\nShape :- Straight\nSlit Details :- Side Slits\nDesign Styling :- Regular\nHemline :- Straight\nLength :- Calf Length\nNeck :- Round Neck\nPrint or Pattern Type :- Abstract \nOccasion :- Fusion\nWeave Pattern :- Regular \n Weave Type :- Machine Weave",
+    images: [
+      { image: Single1, title: "Front View" },
+      { image: Single2, title: "Back View" },
+      { image: Single3, title: "Front View" },
+      { image: Single4, title: "Back View" },
+      { image: Single5, title: "Front View" },
+    
+    ],
    
   },
   {
   id: 4,
  
-  price: 1899,
+  price: 799,
   image: Cart4,
+  cutPrice: 2998.0, // Add cut price
   description: "Teal Polyester Ethnic Motifs Printed Flared Suit Set PKSKD2205",
+  size: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '3XL', '4XL'],
+  colors: ['#F6EEDB', '#FFD6B6', '#FFBDB2'],
+  title:"SKU: VCK9632_XS",
+  material:"vjhgj",
+  addDesc: "Let the print be your canvas. Think of it as a conversation starter, a chance to showcase your unique personality. Don't be afraid to play with accessories that pick up on the colors or shapes you find within the pattern. Maybe a chunky necklace that mirrors the boldness of the print.",
+  stylenote:"Layer it under a chunky cardigan or denim jacket for a touch of edge, or add a pop of color with a contrasting scarf. Dress it up with statement earrings and heels for a night out, or keep it casual with flats and a tote bag for a chic daytime look.",
+  sizefit:"The model (height 5'8) is wearing a size S",
+  materials:"Top Fabric: Viscose Rayon\nWash Care: Hand Wash",
+  specifications:"Sleeve Length :- Three-Quarter Sleeves\n Sleeve Styling :- Regular Sleeves\nShape :- Straight\nSlit Details :- Side Slits\nDesign Styling :- Regular\nHemline :- Straight\nLength :- Calf Length\nNeck :- Round Neck\nPrint or Pattern Type :- Abstract \nOccasion :- Fusion\nWeave Pattern :- Regular \n Weave Type :- Machine Weave",
+  images: [
+    { image: Single1, title: "Front View" },
+      { image: Single2, title: "Back View" },
+      { image: Single3, title: "Front View" },
+      { image: Single4, title: "Back View" },
+      { image: Single5, title: "Front View" },
+    
+  ],
  
   },
 ]

@@ -1,103 +1,162 @@
-/* hide dropdown button */
 .dropdown-toggle::after {
   display: none !important;
-}
- .dropdown-menu {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 1s, opacity 0.5s linear;
- } 
+}  
+
+.dropdown-menu.show {
+  display: flex;
+  flex-direction: column;}
+
+/* Style for the mega-menu container */
+.mega-menu {
  
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-  display: block !important;
-  visibility: visible;
- opacity: 1;
+  
+
+     
+    display: flex;
+  justify-content: center; 
+  transform: translateX(-37%);  
+  width: 814%;
+  gap: 20px;
+  
+  position: absolute;
+  padding: 1rem 2rem !important; 
+ 
+  box-sizing: border-box;  
+  
+  
+} 
+
+
+
+
+
+.categories-column ul,
+.categories-column li
+{
+  list-style: none;
+  padding: 0;
 }
 
-.custom-dropdown .dropdown-menu {
-  margin-top: 7px !important; /* Adjust this value as needed */
+.subcategories-row {
+  display: flex ;
+  flex-wrap: wrap; /* Ensure items are in a single row */
+  justify-content: center; /* Center the subcategories horizontally */
+  gap: 30px; /* Adjust the gap size according to your preference */
+  margin-left:-550px;
+
+  /* -550px; */
+  
+ 
+  
+  
 }
 
-/* Styling the underline for the menu items */
-.line-bar {
+.subcategory-column {
+  flex: 1;
+  margin-bottom: 0; /* Reset margin-bottom to remove the default margin */
+
+}
+.custom-dropdown .categories-column {
+  margin-right:0px; /* Add margin to create space between main category and subcategories */
+}
+.subcategory-container {
+  /* Add margin-bottom for gap between subcategories */
+  text-align: center; /* Center the subcategory content */
+  
+}
+.categories-column {
+  padding: 0 20px; /* Adjust the padding as needed */
+
+
+  
+ }
+/* Add a vertical line after the first h6 within the categories column */
+.categories-column :first-child {
   position: relative;
 }
 
-@media (min-width: 992px) {
-  .line-bar::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #d46a3b;
-    transition: bottom 0.3s ease;
-    opacity: 0;
-  }
+.categories-column  :first-child:after  {
+  content: '';
+  display:block;
+  position: absolute;
+  top:0;
+  /*left: 100%; /* Position it to the right of the first h6 */
+bottom:0;
+  
+  /*width: 2px; /* Adjust the width of the vertical line */
+  
+  left: 160px; /* Adjust the distance between the first h6 and the line */
+  border-left: 1px solid #e0e0e0; 
+}
 
-  /* Show underline on hover */
-  .line-bar:hover::after {
-    bottom: -5px;
-    opacity: 1;
-  }
-  .ethenic-wear::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #d46a3b;
-    transition: bottom 0.3s ease;
-    opacity: 0;
-  }
-  
-  
-  .ethenic-wear:hover::after {
-    bottom: -5px;
-    opacity: 1;
-  } 
-  
+ /*.subcategories-column li a {
+  display: block;
+  padding: 0.2rem 0;
+  text-decoration: none;
+  color: #333;
+} */
+ 
+.subcategory-container a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
 }
 
 
-/* Custom styles for mega menu */
-
-.categories-column {
-  padding: 1rem 2rem !important;
- }
-.category-items {
-  list-style: none;
-  padding: 0;
-  
- }
- 
  .category-items li a {
   display: block;
- padding: 0.5rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
-  color: inherit;
- }
- .category-items li a:hover {
-  color: #007bff;
- }
- 
- .mega-menu {
-  position: absolute;
-  margin-top: 0.5rem;
-  padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
- }
- 
-.mega-menu .categories-column {
-  margin-bottom: 20px;
-  /* Add a vertical divider */
-  padding-right: 20px; /* Adjust spacing as needed */
+  color: #333;
 }
-.mega-menu .categories-column:first-of-type {
-  border-right: 1px solid #ccc; /* Add a vertical divider to the first column */
+
+
+
+
+
+
+
+
+
+/* Add hover styles for label anchors */
+
+.categories-column a{
+  display: inline-block;
+  padding: 10px 15px; /* Adjust padding as needed */
+  margin-bottom: 4px; /* Adjust margin as needed */
+  text-decoration: none;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: 155px; /* Set a fixed width for the anchor elements */
+  box-sizing: border-box;
 }
+ .categories-column a:hover {
+ 
+ 
+  background-color: #e2e6ea;
+  
+ }
+ .categories-column a.active {
+  
+  
+  background-color: #e2e6ea;
+} 
+/* Add hover styles for label anchors */
+
+.no-underline{
+  text-decoration: none !important;
+  flex-wrap: nowrap;
+}
+
+
+/* @media screen and (max-width: 991px) { .mega-menu { position: static; width: auto; left: auto; padding: 0;
+  .subcategories-row { margin-left: 0; }
+
+  .categories-column :first-child:after { display: none; }
+  
+  .categories-column { padding: 0; }
+  
+  .categories-column a { padding: 5px 10px; }
+  
+  .subcategory-column { flex: none; margin-bottom: 1rem; } }  } */

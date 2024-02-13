@@ -105,7 +105,7 @@
     transition: color 0.3s ease; /* Smooth color transition on hover */
   }
   .contact-details a:hover {
-    color: rgb(223, 234, 218); /* Change text color on hover */
+    color:  rgb(198, 87, 35);/* Change text color on hover */
   }
   
   /* Adjust the font size and style as needed */
@@ -178,7 +178,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .customer-support a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color: rgb(198, 87, 35); /* Change text color on hover */
 }
 
 .customer-support ul li {
@@ -262,7 +262,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .my-account a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color:  rgb(198, 87, 35);; /* Change text color on hover */
 }
 
 .my-account ul li {
@@ -343,7 +343,7 @@
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 .user-links a:hover {
-  color: rgb(223, 234, 218); /* Change text color on hover */
+  color: rgb(198, 87, 35); /* Change text color on hover */
 }
 
 .user-links ul li {
@@ -481,7 +481,7 @@
   font-size: 20px;
 }
 .newsletter a:hover{
-  color:rgb(223, 234, 218);
+  color: rgb(198, 87, 35);
 }
 .input-line {
   position: relative;

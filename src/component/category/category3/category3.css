@@ -3,10 +3,11 @@
   max-width:350px;
   margin-bottom: 20px; /* Add margin at the bottom to create separation */
   text-align: center;
+  padding-bottom: 20px;
   
  
   /* Add a border for clarity */
-  padding-bottom: 20px;/* Add padding for better spacing */
+ 
 }
 
 .item img {
@@ -16,15 +17,29 @@
   object-fit: cover;
 }
 .item-prices{
-  display:flex;
+  /* display:flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   gap:20px;
 }
 .item-price-new{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  gap: 8px; /* Add some spacing between cut price and actual price */
   color:black;
-  font-size:18px;
-  font-weight: 600;
+  font-size:16px;
+  font-weight: 500;
+  padding-bottom: 20px;/* Add padding for better spacing */
+}
+
+
+.item-price-new p {
+  margin: 0; /* Remove default margin to align text properly */
+}
+
+.item-price-new .cut-price {
+  margin-right: 10px; /* Add some spacing between cut price and actual price */
 }
 
  .item:hover{
@@ -68,7 +83,16 @@
   margin-bottom: 10px; /* Adjust margin to move the button up */
   /* Add border-radius for rounded corners */
 }
+/* Add this to your CSS file */
+.cut-price {
+  color: grey; /* Set the color for cut price */
+  text-decoration: line-through; /* Add a strikethrough effect for cut price */
+  margin-right: 10px; /* Add some spacing between cut price and actual price */
+}
 
+.actual-price {
+  color: black; /* Set the color for actual price */
+}
 
 
 .popular {

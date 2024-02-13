@@ -1,16 +1,21 @@
 import React from "react";
-import EthenicDropdown from "./ethenic";
+import EthenicDrop from "./Ethenicdrop";
+import LoungeDrop from "./LoungeDrop";
 import { useState } from "react";
 import Header from "../header/header";
+import { logout } from "../../actions/userAction";
 import {
   Navbar,
   Nav,
   FormControl,
   InputGroup,
-  Dropdown,
   
+  NavDropdown
 } from "react-bootstrap";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import './navbar.css';
+
+import { Link, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   FaSearch,
   FaInstagram,
@@ -21,8 +26,11 @@ import {
   FaPinterest,
   FaFacebook,
 } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+
 import { CiUser, CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
+import WesternDrop from "./Westerndropdown";
 const Navba = () => {
   const ahikaLogo = "/assets/ahika-logo.png";
 
@@ -39,11 +47,21 @@ const Navba = () => {
     setShowNavItems(false);
   };
 
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+  const dispatch = useDispatch();
+
+  const logoutHandler = () => {
+    dispatch(logout());
+  }; 
+
+
   return (
     <>
       {/*for toogle bar*/}
       <Header/>
-      <Navbar bg="white" expand="lg"  >
+      <Navbar bg="white" expand="lg" className="sticky-navbar">
         <div
           className="hamburger-icon d-lg-none"
           onClick={toggleNavItems}
@@ -109,7 +127,7 @@ const Navba = () => {
             style={{ paddingLeft: "20px" }}
           >
              <hr className="d-lg-none" />
-            <Nav.Link as={Link} to="/new-launch" className="line-bar">
+            <Nav.Link as={Link} to="/new-launch" className="line-bar text-nowrap">
               NEW LAUNCH
             </Nav.Link>
             <hr className="d-lg-none" />
@@ -118,17 +136,21 @@ const Navba = () => {
 
 
 
-             <EthenicDropdown/> 
+             <EthenicDrop/> 
              <hr className="d-lg-none" />
 
 
+             <WesternDrop/> 
+             <hr className="d-lg-none" />
 
+             <LoungeDrop/> 
+             <hr className="d-lg-none" />
 
-            <Nav.Link as={Link} to="/ahika-plus" className="line-bar">
+            <Nav.Link as={Link} to="/ahika-plus" className="line-bar text-nowrap">
               AKHIKA PLUS
             </Nav.Link>
             <hr className="d-lg-none"/>
-            <Nav.Link as={Link} to="/best-seller" className="line-bar">
+            <Nav.Link as={Link} to="/best-seller" className="line-bar text-nowrap">
               BEST SELLER
             </Nav.Link>
             <hr className="d-lg-none"/>
@@ -137,7 +159,7 @@ const Navba = () => {
 
           {/*for large screen search bar*/}
           <div className="ml-3 d-none d-lg-flex align-items-center">
-            <InputGroup style={{ maxWidth: "120px", position: "relative" }}>
+            <InputGroup style={{ maxWidth: "150px", position: "relative" }}>
               <FormControl
                 placeholder="Search.."
                 className="rounded-pill"
@@ -163,11 +185,30 @@ const Navba = () => {
             className="ml-3 d-none d-lg-flex"
             style={{ display: "flex", alignItems: "center" }}
           >
-            <div className="user-icon">
-              <NavLink to="/sign-in">
-                <CiUser style={{ color: "black", fontSize: "25px" }} />
-              </NavLink>
-            </div>
+
+       {userInfo ? (
+                <NavDropdown title={userInfo.name} >
+                   <NavLink to="/profile">
+                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                  </NavLink>
+          
+            <NavDropdown.Item onClick={logoutHandler}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+
+                <div className="user-icon">
+                <NavLink to="/sign-in">
+                  <CiUser style={{ color: "black", fontSize: "25px" }} />
+                </NavLink>
+              </div>
+            )} 
+
+
+
+
+
             <div className="heart-icon">
               <NavLink to="/">
                 <CiHeart style={{ color: "black", fontSize: "25px" }} />
